@@ -1,0 +1,51 @@
+name: Acceptance Test Schedule
+
+# Runs acceptance tests on a cron schedule
+
+on:
+  schedule:
+    - cron: 0 14 * * MON-FRI # Every weekday at 14:00 UTC (10a Eastern)
+
+concurrency: acceptance_tests
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.22.x
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: make testacc
+        run: make testacc
+        env:
+          TESTARGS: -parallel 20
+          ABRHA_TOKEN: ${{ secrets.ACCEPTANCE_TESTS_TOKEN }}
+          SPACES_ACCESS_KEY_ID: ${{ secrets.SPACES_ACCESS_KEY_ID }}
+          SPACES_SECRET_ACCESS_KEY: ${{ secrets.SPACES_SECRET_ACCESS_KEY }}
+
+  sweep:
+    if: ${{ always() }}
+    needs: acceptance
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.22.x
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: make sweep
+        run: make sweep
+        env:
+          ABRHA_TOKEN: ${{ secrets.ACCEPTANCE_TESTS_TOKEN }}
+          SPACES_ACCESS_KEY_ID: ${{ secrets.SPACES_ACCESS_KEY_ID }}
+          SPACES_SECRET_ACCESS_KEY: ${{ secrets.SPACES_SECRET_ACCESS_KEY }}

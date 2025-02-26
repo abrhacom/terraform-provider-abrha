@@ -1,0 +1,10 @@
+contact_links:
+  - name: Abrha Terraform Provider Discussions
+    url: https://github.com/abrhacom/terraform-provider-abrha/discussions
+    about: Participate in discussions specific to the official Terraform provider for Abrha
+  - name: Abrha Community Q&A
+    url: https://www.parspack.com/community/questions
+    about: Ask general questions about Abrha products and services
+  - name: Abrha Support
+    url: https://www.parspack.com/support/
+    about: Use Abrha Support for issues specific to your account

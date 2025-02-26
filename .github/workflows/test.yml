@@ -1,0 +1,38 @@
+name: Tests
+
+# Runs unit and acceptance tests for pull requests and pushes to main.
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  unit:
+    # Runs `go vet` and unit tests.
+    strategy:
+      matrix:
+        go-version: [1.22.x, 1.23.x]
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: make vet
+        run: make vet
+
+      - name: Lint with golangci-lint
+        run: make lint
+
+      - name: Run terrafmt
+        run: make terrafmt-check
+
+      - name: make test
+        run: make test
