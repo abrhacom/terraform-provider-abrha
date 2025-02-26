@@ -1,4 +1,4 @@
-# github.com/abrhacom/go-api-abrha v0.0.0 => ./go-api-abrha
+# github.com/abrhacom/go-api-abrha v1.0.0
 ## explicit; go 1.22
 github.com/abrhacom/go-api-abrha
 github.com/abrhacom/go-api-abrha/metrics
@@ -447,4 +447,3 @@ gopkg.in/yaml.v2
 ## explicit
 gopkg.in/yaml.v3
 # git.apache.org/thrift.git => github.com/apache/thrift v0.0.0-20180902110319-2566ecd5d999
-# github.com/abrhacom/go-api-abrha => ./go-api-abrha
