@@ -1,0 +1,3 @@
+[submodule "github.com/abrhacom/go-api-abrha"]
+	path = go-api-abrha
+	url = ssh://git@m2.bitcommand.com:222/terraform/parspack-go-public-api.git
