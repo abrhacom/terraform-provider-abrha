@@ -10,25 +10,12 @@ on:
     tags:
       - 'v*'
 
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version to release (e.g., v1.0.0)'
-        required: true
-        type: string
-
 jobs:
   goreleaser:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Create Release Tag
-        if: github.event_name == 'workflow_dispatch'
-        run: |
-          git tag ${{ inputs.version }}
-          git push origin ${{ inputs.version }}
 
       - name: Unshallow
         run: git fetch --prune --unshallow

@@ -55,7 +55,7 @@ The following arguments are supported:
 * `backup_policy` - (Optional) An object specifying the backup policy for the Droplet. If omitted and `backups` is `true`, the backup plan will default to daily.
    - `plan` - The backup plan used for the Droplet. The plan can be either `daily`, `weekly` or `monthly`.
   - `weekday` - Specifies the day of the week (`SUN`, `MON`, `TUE`, `WED`, `THU`, `FRI`, `SAT`) when the backup will run, applicable only if the backup plan is set to `weekly`.
-  - `monthly` - Specifies the day of the month (1–28) on which the backup will run, applicable only if the backup plan is set to `monthly`.
+  - `monthday` - Specifies the day of the month (1–28) on which the backup will run, applicable only if the backup plan is set to `monthly`.
 * `vpc_uuid` - (Optional) The ID of the VPC where the Vm will be located.If no `vpc_uuid` is provided, the Vm will be placed in your account's default VPC for the region.
 * `ssh_keys` - (Optional) A list of SSH key IDs or fingerprints to enable in
    the format `[12345, 123456]`. To retrieve this info, use the

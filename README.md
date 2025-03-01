@@ -1,7 +1,7 @@
 Abrha Terraform Provider
 ==================
 
-- Documentation: https://registry.terraform.io/providers/abrha/abrha/latest/docs
+- Documentation: https://registry.terraform.io/providers/abrhacom/abrha/latest/docs
 
 Requirements
 ------------
@@ -29,7 +29,7 @@ $ make build
 Using the provider
 ----------------------
 
-See the [Abrha Provider documentation](https://registry.terraform.io/providers/abrha/abrha/latest/docs) to get started using the Abrha provider.
+See the [Abrha Provider documentation](https://registry.terraform.io/providers/abrhacom/abrha/latest/docs) to get started using the Abrha provider.
 
 Developing the Provider
 ---------------------------
