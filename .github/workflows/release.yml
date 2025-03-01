@@ -44,6 +44,8 @@ jobs:
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
+          fingerprint: ${{ secrets.GPG_FINGERPRINT }}
+          trust_level: 5
 
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
@@ -52,5 +54,5 @@ jobs:
           version: "~> v2"
           args: release --clean
         env:
-          GPG_FINGERPRINT: ${{ steps.import_gpg.outputs.fingerprint }}
+          GPG_FINGERPRINT: ${{ secrets.GPG_FINGERPRINT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
