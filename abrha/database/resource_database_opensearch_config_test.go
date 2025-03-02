@@ -2,9 +2,10 @@ package database_test
 
 import (
 	"fmt"
+	"testing"
+
 	"github.com/abrhacom/terraform-provider-abrha/abrha/acceptance"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
-	"testing"
 )
 
 func TestAccAbrhaDatabaseOpensearchConfig_Basic(t *testing.T) {
