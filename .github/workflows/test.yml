@@ -25,6 +25,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Make scripts executable
+        run: chmod +x ./terraform-provider-abrha/scripts/*.sh
+
       - name: make vet
         run: make vet
 
