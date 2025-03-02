@@ -129,7 +129,7 @@ resource "abrha_vm" "foobar" {
 
 resource "abrha_reserved_ip_assignment" "foobar" {
   ip_address = abrha_reserved_ip.foobar.ip_address
-  vm_id = abrha_vm.foobar.0.id
+  vm_id      = abrha_vm.foobar.0.id
 }
 `
 
@@ -150,7 +150,7 @@ resource "abrha_vm" "foobar" {
 
 resource "abrha_reserved_ip_assignment" "foobar" {
   ip_address = abrha_reserved_ip.foobar.ip_address
-  vm_id = abrha_vm.foobar.1.id
+  vm_id      = abrha_vm.foobar.1.id
 }
 `
 
@@ -188,7 +188,7 @@ resource "abrha_reserved_ip" "foobar" {
 
 resource "abrha_reserved_ip_assignment" "foobar" {
   ip_address = abrha_reserved_ip.foobar.id
-  vm_id = abrha_vm.foobar.id
+  vm_id      = abrha_vm.foobar.id
 
   lifecycle {
     create_before_destroy = true
@@ -214,7 +214,7 @@ resource "abrha_reserved_ip" "foobar" {
 
 resource "abrha_reserved_ip_assignment" "foobar" {
   ip_address = abrha_reserved_ip.foobar.id
-  vm_id = abrha_vm.foobar.id
+  vm_id      = abrha_vm.foobar.id
 
   lifecycle {
     create_before_destroy = true

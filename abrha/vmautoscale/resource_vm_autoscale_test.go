@@ -318,17 +318,16 @@ resource "abrha_vm_autoscale" "foobar" {
   }
 
   vm_template {
-    size               = "c-2"
-    region             = "nyc3"
-    image              = "ubuntu-24-04-x64"
-    tags               = [abrha_tag.foo.id, abrha_tag.bar.id]
-    ssh_keys           = [abrha_ssh_key.foo.id, abrha_ssh_key.bar.id]
+    size          = "c-2"
+    region        = "nyc3"
+    image         = "ubuntu-24-04-x64"
+    tags          = [abrha_tag.foo.id, abrha_tag.bar.id]
+    ssh_keys      = [abrha_ssh_key.foo.id, abrha_ssh_key.bar.id]
     with_vm_agent = true
-    ipv6               = true
-    user_data          = "\n#cloud-config\nruncmd:\n- apt-get update\n- apt-get install -y stress-ng\n"
+    ipv6          = true
+    user_data     = "\n#cloud-config\nruncmd:\n- apt-get update\n- apt-get install -y stress-ng\n"
   }
-}`,
-		acceptance.RandomTestName("sshKey1"), pubKey1,
+}`, acceptance.RandomTestName("sshKey1"), pubKey1,
 		acceptance.RandomTestName("sshKey2"), pubKey2,
 		acceptance.RandomTestName("tag1"),
 		acceptance.RandomTestName("tag2"),
@@ -379,17 +378,16 @@ resource "abrha_vm_autoscale" "foobar" {
   }
 
   vm_template {
-    size               = "c-2"
-    region             = "nyc3"
-    image              = "ubuntu-24-04-x64"
-    tags               = [abrha_tag.foo.id, abrha_tag.bar.id]
-    ssh_keys           = [abrha_ssh_key.foo.id, abrha_ssh_key.bar.id]
+    size          = "c-2"
+    region        = "nyc3"
+    image         = "ubuntu-24-04-x64"
+    tags          = [abrha_tag.foo.id, abrha_tag.bar.id]
+    ssh_keys      = [abrha_ssh_key.foo.id, abrha_ssh_key.bar.id]
     with_vm_agent = true
-    ipv6               = true
-    user_data          = "\n#cloud-config\nruncmd:\n- apt-get update\n- apt-get install -y stress-ng\n"
+    ipv6          = true
+    user_data     = "\n#cloud-config\nruncmd:\n- apt-get update\n- apt-get install -y stress-ng\n"
   }
-}`,
-		acceptance.RandomTestName("sshKey1"), pubKey1,
+}`, acceptance.RandomTestName("sshKey1"), pubKey1,
 		acceptance.RandomTestName("sshKey2"), pubKey2,
 		acceptance.RandomTestName("tag1"),
 		acceptance.RandomTestName("tag2"),

@@ -90,7 +90,7 @@ resource "abrha_vm" "bar" {
 }
 
 resource "abrha_vm_snapshot" "bar" {
-  name       = "%s"
+  name  = "%s"
   vm_id = abrha_vm.bar.id
 }`, vmName, snapName)
 	dataSourceConfig := `
@@ -158,7 +158,7 @@ resource "abrha_vm" "foo" {
 }
 
 resource "abrha_vm_snapshot" "foo" {
-  name       = "%s"
+  name  = "%s"
   vm_id = abrha_vm.foo.id
 }
 `

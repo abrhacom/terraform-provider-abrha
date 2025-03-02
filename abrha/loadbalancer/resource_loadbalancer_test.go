@@ -1296,8 +1296,8 @@ resource "abrha_loadbalancer" "foobar" {
     target_protocol = "http"
   }
 
-  vpc_uuid    = abrha_vpc.foobar.id
-  vm_ids = [abrha_vm.foobar.id]
+  vpc_uuid = abrha_vpc.foobar.id
+  vm_ids   = [abrha_vm.foobar.id]
 }`, acceptance.RandomTestName(), acceptance.RandomTestName(), name)
 }
 
@@ -1394,7 +1394,7 @@ resource "abrha_loadbalancer" "lorem" {
     is_managed = false
   }
 
-  vm_ids              = [abrha_vm.foobar.id]
+  vm_ids                   = [abrha_vm.foobar.id]
   target_load_balancer_ids = [abrha_loadbalancer.foobar.id]
 }`, name, name, name)
 }
@@ -1466,7 +1466,7 @@ resource "abrha_loadbalancer" "lorem" {
     is_managed = false
   }
 
-  vm_ids              = [abrha_vm.foobar.id]
+  vm_ids                   = [abrha_vm.foobar.id]
   target_load_balancer_ids = [abrha_loadbalancer.foobar.id]
 }`, name, name, name)
 }

@@ -140,8 +140,8 @@ resource "abrha_vm" "foobar" {
 }
 
 resource "abrha_floating_ip" "foobar" {
-  vm_id = abrha_vm.foobar.id
-  region     = abrha_vm.foobar.region
+  vm_id  = abrha_vm.foobar.id
+  region = abrha_vm.foobar.region
 }`, name)
 }
 
@@ -157,8 +157,8 @@ resource "abrha_vm" "baz" {
 }
 
 resource "abrha_floating_ip" "foobar" {
-  vm_id = abrha_vm.baz.id
-  region     = abrha_vm.baz.region
+  vm_id  = abrha_vm.baz.id
+  region = abrha_vm.baz.region
 }`, name)
 }
 
