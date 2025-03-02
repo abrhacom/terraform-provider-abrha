@@ -14,14 +14,14 @@ modify, and delete Vms. Vms also support
 ```hcl
 # Create a new Web VM in the Frankfurt region with weekly backup enabled.
 resource "abrha_vm" "web" {
-  image  = "ubuntu24-cloudinit-qcow2"
-  name   = "web-1"
-  region = "frankfurt"
-  size   = "deLinuxVPS4"
+  image   = "ubuntu24-cloudinit-qcow2"
+  name    = "web-1"
+  region  = "frankfurt"
+  size    = "deLinuxVPS4"
   backups = true
   backup_policy {
-     plan    = "weekly"
-     weekday = "TUE"
+    plan    = "weekly"
+    weekday = "TUE"
   }
 }
 ```
@@ -30,14 +30,14 @@ Or:
 ```hcl
 # Create a new Web VM in the Frankfurt region with monthly backup enabled.
 resource "abrha_vm" "web" {
-  image  = "ubuntu24-cloudinit-qcow2"
-  name   = "web-1"
-  region = "frankfurt"
-  size   = "deLinuxVPS4"
+  image   = "ubuntu24-cloudinit-qcow2"
+  name    = "web-1"
+  region  = "frankfurt"
+  size    = "deLinuxVPS4"
   backups = true
   backup_policy {
-     plan    = "monthly"
-     monthday = 15
+    plan     = "monthly"
+    monthday = 15
   }
 }
 ```

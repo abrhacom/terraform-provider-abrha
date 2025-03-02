@@ -737,8 +737,8 @@ resource "abrha_loadbalancer" "foo" {
     protocol = "tcp"
   }
 
-  vm_tag = abrha_tag.foo.id
-  depends_on  = ["abrha_vm.foo"]
+  vm_tag     = abrha_tag.foo.id
+  depends_on = ["abrha_vm.foo"]
 }`, testName, testName, testName, sizeSlug)
 }
 
@@ -776,8 +776,8 @@ resource "abrha_loadbalancer" "foo" {
     protocol = "tcp"
   }
 
-  vm_tag = abrha_tag.foo.id
-  depends_on  = ["abrha_vm.foo"]
+  vm_tag     = abrha_tag.foo.id
+  depends_on = ["abrha_vm.foo"]
 }`, testName, testName, testName, sizeUnit)
 }
 

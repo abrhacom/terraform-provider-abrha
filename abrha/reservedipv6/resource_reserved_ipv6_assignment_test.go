@@ -151,7 +151,7 @@ resource "abrha_vm" "foobar" {
 }
 
 resource "abrha_reserved_ipv6_assignment" "foobar" {
-  ip         = abrha_reserved_ipv6.foobar.ip
+  ip    = abrha_reserved_ipv6.foobar.ip
   vm_id = abrha_vm.foobar.0.id
 }
 `
@@ -195,7 +195,7 @@ resource "abrha_vm" "foobar" {
 }
 
 resource "abrha_reserved_ipv6_assignment" "foobar" {
-  ip         = abrha_reserved_ipv6.foobar.ip
+  ip    = abrha_reserved_ipv6.foobar.ip
   vm_id = abrha_vm.foobar1.0.id
 }
 `
@@ -233,7 +233,7 @@ resource "abrha_reserved_ipv6" "foobar" {
 }
 
 resource "abrha_reserved_ipv6_assignment" "foobar" {
-  ip         = abrha_reserved_ipv6.foobar.ip
+  ip    = abrha_reserved_ipv6.foobar.ip
   vm_id = abrha_vm.foobar.id
 
   lifecycle {
@@ -259,7 +259,7 @@ resource "abrha_reserved_ipv6" "foobar" {
 }
 
 resource "abrha_reserved_ipv6_assignment" "foobar" {
-  ip         = abrha_reserved_ipv6.foobar.ip
+  ip    = abrha_reserved_ipv6.foobar.ip
   vm_id = abrha_vm.foobar.id
 
   lifecycle {

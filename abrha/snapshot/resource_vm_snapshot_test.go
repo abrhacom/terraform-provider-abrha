@@ -93,5 +93,5 @@ resource "abrha_vm" "foo" {
 
 resource "abrha_vm_snapshot" "foobar" {
   vm_id = abrha_vm.foo.id
-  name       = "%s"
+  name  = "%s"
 }`

@@ -228,8 +228,8 @@ resource "abrha_vm" "foobar" {
 }
 
 resource "abrha_volume_attachment" "foobar" {
-  vm_id = abrha_vm.foobar.id
-  volume_id  = abrha_volume.foobar.id
+  vm_id     = abrha_vm.foobar.id
+  volume_id = abrha_volume.foobar.id
 }`, vName, dName)
 }
 
@@ -257,13 +257,13 @@ resource "abrha_vm" "foobar" {
 }
 
 resource "abrha_volume_attachment" "foobar" {
-  vm_id = abrha_vm.foobar.id
-  volume_id  = abrha_volume.foobar.id
+  vm_id     = abrha_vm.foobar.id
+  volume_id = abrha_volume.foobar.id
 }
 
 resource "abrha_volume_attachment" "barfoo" {
-  vm_id = abrha_vm.foobar.id
-  volume_id  = abrha_volume.barfoo.id
+  vm_id     = abrha_vm.foobar.id
+  volume_id = abrha_volume.barfoo.id
 }`, vName, vSecondName, dName)
 }
 
@@ -291,7 +291,7 @@ resource "abrha_vm" "foobar" {
 }
 
 resource "abrha_volume_attachment" "foobar" {
-  vm_id = abrha_vm.foobar.id
-  volume_id  = abrha_volume.%s.id
+  vm_id     = abrha_vm.foobar.id
+  volume_id = abrha_volume.%s.id
 }`, vName, vSecondName, dName, activeVolume)
 }
