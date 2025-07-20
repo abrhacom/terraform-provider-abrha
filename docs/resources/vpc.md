@@ -5,7 +5,7 @@ subcategory: "Networking"
 
 # abrha_vpc
 
-Provides a [Abrha VPC](https://docs.parspack.com/api/#tag/VPCs) resource.
+Provides a [Abrha VPC](https://docs.parspack.com/reference/api/#tag/VPCs) resource.
 
 VPCs are virtual networks containing resources that can communicate with each
 other in full isolation, using private IP addresses.

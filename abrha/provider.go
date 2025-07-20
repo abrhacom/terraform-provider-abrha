@@ -205,7 +205,7 @@ func Provider() *schema.Provider {
 		diags = append(diags, diag.Diagnostic{
 			Severity: diag.Warning,
 			Summary:  "Billing Warning",
-			Detail:   "Please note that if the virtual machine is deleted during its initial billing period (the pre-paid duration), no refunds will be issued for the cost already charged.",
+			Detail:   "Please note that if a virtual machine or a reserved IP is deleted during its initial billing period (the pre-paid duration), no refunds will be issued for the amount already charged.",
 		})
 
 		terraformVersion := p.TerraformVersion
