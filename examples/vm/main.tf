@@ -51,12 +51,7 @@ data "abrha_sizes" "selectedSize" {
   }
   filter {
     key      = "disk"
-    values   = ["100"]
-  }
-  filter {
-    key      = "slug"
-    values   = ["Linux"]
-    match_by = "substring"
+    values   = ["40"]
   }
   sort {
     key       = "price_monthly"
@@ -65,7 +60,7 @@ data "abrha_sizes" "selectedSize" {
 }
 
 resource "abrha_ssh_key" "default" {
-  name       = "Terraform Example"
+  name       = "AbrahSshExample"
   public_key = file(var.ssh_public_key_path)
 }
 
