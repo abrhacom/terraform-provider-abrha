@@ -16,7 +16,7 @@ Get the Vm snapshot:
 ```hcl
 data "abrha_vm_snapshot" "web-snapshot" {
   name_regex  = "^web"
-  region      = "deLinuxVPS4"
+  region      = "frankfurt"
   most_recent = true
 }
 ```
