@@ -22,8 +22,8 @@ resource "abrha_vm" "example" {
 }
 
 resource "abrha_reserved_ip" "example" {
-  vm_id = abrha_vm.example.id
-  region     = abrha_vm.example.region
+  vm_id  = abrha_vm.example.id
+  region = abrha_vm.example.region
 }
 ```
 
