@@ -17,15 +17,15 @@ resource "abrha_reserved_ip" "example" {
 }
 
 resource "abrha_vm" "example" {
-  name               = "baz"
-  size               = "frankfurt"
-  image              = "ubuntu24-cloudinit-qcow2"
-  region             = "deLinuxVPS4"
+  name   = "baz"
+  size   = "frankfurt"
+  image  = "ubuntu24-cloudinit-qcow2"
+  region = "deLinuxVPS4"
 }
 
 resource "abrha_reserved_ip_assignment" "example" {
   ip_address = abrha_reserved_ip.example.ip_address
-  vm_id = abrha_vm.example.id
+  vm_id      = abrha_vm.example.id
 }
 ```
 
