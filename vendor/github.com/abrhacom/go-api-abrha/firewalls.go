@@ -10,7 +10,7 @@ import (
 const firewallsBasePath = "api/public/v1/firewalls"
 
 // FirewallsService is an interface for managing Firewalls with the Abrha API.
-// See: https://docs.parspack.com/api/#tag/Firewalls
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Firewalls
 type FirewallsService interface {
 	Get(context.Context, string) (*Firewall, *Response, error)
 	Create(context.Context, *FirewallRequest) (*Firewall, *Response, error)

@@ -9,8 +9,8 @@ import (
 const domainsBasePath = "api/public/v1/domains"
 
 // DomainsService is an interface for managing DNS with the Abrha API.
-// See: https://docs.parspack.com/api/#tag/Domains and
-// https://docs.parspack.com/api/#tag/Domain-Records
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Domains and
+// https://docs.parspack.com/reference/api/cloud-server/#tag/Domain-Records
 type DomainsService interface {
 	List(context.Context, *ListOptions) ([]Domain, *Response, error)
 	Get(context.Context, string) (*Domain, *Response, error)

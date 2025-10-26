@@ -17,7 +17,7 @@ const (
 )
 
 // ProjectsService is an interface for creating and managing Projects with the Abrha API.
-// See: https://docs.parspack.com/api/#tag/Projects
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Projects
 type ProjectsService interface {
 	List(context.Context, *ListOptions) ([]Project, *Response, error)
 	GetDefault(context.Context) (*Project, *Response, error)

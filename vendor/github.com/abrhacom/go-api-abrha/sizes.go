@@ -7,7 +7,7 @@ import (
 
 // SizesService is an interface for interfacing with the size
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Sizes
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Sizes
 type SizesService interface {
 	List(context.Context, *ListOptions) ([]Size, *Response, error)
 }

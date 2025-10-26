@@ -21,7 +21,7 @@ const (
 
 // RegistryService is an interface for interfacing with the Registry endpoints
 // of the Abrha API.
-// See: https://docs.parspack.com/api/#tag/Container-Registry
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Container-Registry
 type RegistryService interface {
 	Create(context.Context, *RegistryCreateRequest) (*Registry, *Response, error)
 	Get(context.Context) (*Registry, *Response, error)

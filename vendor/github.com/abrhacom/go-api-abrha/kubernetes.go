@@ -21,7 +21,7 @@ const (
 
 // KubernetesService is an interface for interfacing with the Kubernetes endpoints
 // of the Abrha API.
-// See: https://docs.parspack.com/api/#tag/Kubernetes
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Kubernetes
 type KubernetesService interface {
 	Create(context.Context, *KubernetesClusterCreateRequest) (*KubernetesCluster, *Response, error)
 	Get(context.Context, string) (*KubernetesCluster, *Response, error)

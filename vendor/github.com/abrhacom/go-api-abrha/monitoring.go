@@ -49,7 +49,7 @@ const (
 
 // MonitoringService is an interface for interfacing with the
 // monitoring endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Monitoring
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Monitoring
 type MonitoringService interface {
 	ListAlertPolicies(context.Context, *ListOptions) ([]AlertPolicy, *Response, error)
 	GetAlertPolicy(context.Context, string) (*AlertPolicy, *Response, error)

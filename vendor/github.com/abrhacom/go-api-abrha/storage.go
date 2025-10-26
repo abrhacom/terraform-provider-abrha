@@ -15,7 +15,7 @@ const (
 
 // StorageService is an interface for interfacing with the storage
 // endpoints of the Pars Pack API.
-// See: https://docs.parspack.com/api/#tag/Block-Storage
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Block-Storage
 type StorageService interface {
 	ListVolumes(context.Context, *ListVolumeParams) ([]Volume, *Response, error)
 	GetVolume(context.Context, string) (*Volume, *Response, error)

@@ -10,7 +10,7 @@ const snapshotBasePath = "api/public/v1/snapshots"
 
 // SnapshotsService is an interface for interfacing with the snapshots
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Snapshots
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Snapshots
 type SnapshotsService interface {
 	List(context.Context, *ListOptions) ([]Snapshot, *Response, error)
 	ListVolume(context.Context, *ListOptions) ([]Snapshot, *Response, error)

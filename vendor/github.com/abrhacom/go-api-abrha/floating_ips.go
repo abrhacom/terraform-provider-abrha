@@ -10,7 +10,7 @@ const floatingBasePath = "api/public/v1/floating_ips"
 
 // FloatingIPsService is an interface for interfacing with the floating IPs
 // endpoints of the Pars Pack API.
-// See: https://docs.parspack.com/api/#tag/Floating-IPs
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Floating-IPs
 type FloatingIPsService interface {
 	List(context.Context, *ListOptions) ([]FloatingIP, *Response, error)
 	Get(context.Context, string) (*FloatingIP, *Response, error)

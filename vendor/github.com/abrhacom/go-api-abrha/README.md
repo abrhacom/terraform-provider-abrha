@@ -7,7 +7,7 @@ go-api-abrha is a Go client library for accessing the Abrha V1 API.
 
 You can view the client API docs here: [http://godoc.org/github.com/abrhacom/go-api-abrha](http://godoc.org/github.com/abrhacom/go-api-abrha)
 
-You can view Abrha API docs here: [https://docs.parspack.com/api/](https://docs.parspack.com/api/)
+You can view Abrha API docs here: [https://docs.parspack.com/reference/api/cloud-server/](https://docs.parspack.com/reference/api/cloud-server/)
 
 ## Install
 ```sh
@@ -189,7 +189,7 @@ To see the list of past versions, run `git tag`.
 
 ## Documentation
 
-For a comprehensive list of examples, check out the [API documentation](https://docs.parspack.com/api/#tag/SSH-Keys).
+For a comprehensive list of examples, check out the [API documentation](https://docs.parspack.com/reference/api/cloud-server/#tag/SSH-Keys).
 
 For details on all the functionality in this library, see the [GoDoc](https://godoc.org/github.com/abrhacom/go-api-abrha) documentation.
 

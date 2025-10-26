@@ -10,7 +10,7 @@ import (
 const certificatesBasePath = "/api/public/v1/certificates"
 
 // CertificatesService is an interface for managing certificates with the Abrha API.
-// See: https://docs.parspack.com/api/#tag/Certificates
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Certificates
 type CertificatesService interface {
 	Get(context.Context, string) (*Certificate, *Response, error)
 	List(context.Context, *ListOptions) ([]Certificate, *Response, error)

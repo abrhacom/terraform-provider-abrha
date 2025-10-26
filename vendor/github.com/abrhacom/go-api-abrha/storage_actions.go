@@ -8,7 +8,7 @@ import (
 
 // StorageActionsService is an interface for interfacing with the
 // storage actions endpoints of the Pars Pack API.
-// See: https://docs.parspack.com/api/#tag/Block-Storage-Actions
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Block-Storage-Actions
 type StorageActionsService interface {
 	Attach(ctx context.Context, volumeID string, vmID string) (*Action, *Response, error)
 	DetachByVmID(ctx context.Context, volumeID string, vmID string) (*Action, *Response, error)

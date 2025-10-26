@@ -9,7 +9,7 @@ import (
 
 // ImageActionsService is an interface for interfacing with the image actions
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Image-Actions
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Image-Actions
 type ImageActionsService interface {
 	Get(context.Context, int, int) (*Action, *Response, error)
 	GetByURI(context.Context, string) (*Action, *Response, error)

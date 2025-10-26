@@ -8,7 +8,7 @@ import (
 
 // BalanceService is an interface for interfacing with the Balance
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#operation/balance_get
+// See: https://docs.parspack.com/reference/api/cloud-server/#operation/balance_get
 type BalanceService interface {
 	Get(context.Context) (*Balance, *Response, error)
 }

@@ -112,7 +112,7 @@ var evictionPolicyMap = map[string]string{
 // help make these entities distinct from Databases in go_api_abrha, we refer to them
 // here as DatabaseDBs.
 //
-// See: https://docs.parspack.com/api/#tag/Databases
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Databases
 type DatabasesService interface {
 	List(context.Context, *ListOptions) ([]Database, *Response, error)
 	Get(context.Context, string) (*Database, *Response, error)

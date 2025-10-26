@@ -12,7 +12,7 @@ type ActionRequest map[string]interface{}
 
 // VmActionsService is an interface for interfacing with the Vm actions
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/VM-Actions
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/VM-Actions
 type VmActionsService interface {
 	Shutdown(context.Context, string) (*Action, *Response, error)
 	ShutdownByTag(context.Context, string) ([]Action, *Response, error)

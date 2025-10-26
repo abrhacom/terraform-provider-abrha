@@ -11,7 +11,7 @@ const reservedIPsBasePath = "api/public/v1/reserved_ips"
 
 // ReservedIPsService is an interface for interfacing with the reserved IPs
 // endpoints of the Pars Pack API.
-// See: https://docs.parspack.com/api/#tag/Reserved-IPs
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Reserved-IPs
 type ReservedIPsService interface {
 	List(context.Context, *ListOptions) ([]ReservedIP, *Response, error)
 	Get(context.Context, string) (*ReservedIP, *Response, error)

@@ -10,7 +10,7 @@ const tagsBasePath = "api/public/v1/tags"
 
 // TagsService is an interface for interfacing with the tags
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Tags
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Tags
 type TagsService interface {
 	List(context.Context, *ListOptions) ([]Tag, *Response, error)
 	Get(context.Context, string) (*Tag, *Response, error)

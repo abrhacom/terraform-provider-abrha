@@ -14,7 +14,7 @@ var errNoNetworks = errors.New("no networks have been defined")
 
 // VmsService is an interface for interfacing with the Vm
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/VMs
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/VMs
 type VmsService interface {
 	List(context.Context, *ListOptions) ([]Vm, *Response, error)
 	ListWithGPUs(context.Context, *ListOptions) ([]Vm, *Response, error)

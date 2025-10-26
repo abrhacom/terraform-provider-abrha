@@ -10,7 +10,7 @@ const imageBasePath = "api/public/v1/images"
 
 // ImagesService is an interface for interfacing with the images
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Images
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Images
 type ImagesService interface {
 	List(context.Context, *ListOptions) ([]Image, *Response, error)
 	ListDistribution(ctx context.Context, opt *ListOptions) ([]Image, *Response, error)

@@ -8,7 +8,7 @@ import (
 
 // ReservedIPActionsService is an interface for interfacing with the
 // reserved IPs actions endpoints of the Pars Pack API.
-// See: https://docs.parspack.com/api/#tag/Reserved-IP-Actions
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Reserved-IP-Actions
 type ReservedIPActionsService interface {
 	Assign(ctx context.Context, ip string, vmID string) (*Action, *Response, error)
 	Unassign(ctx context.Context, ip string) (*Action, *Response, error)

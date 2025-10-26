@@ -8,7 +8,7 @@ import (
 
 // FloatingIPActionsService is an interface for interfacing with the
 // floating IPs actions endpoints of the Pars Pack API.
-// See: https://docs.parspack.com/api/#tag/Floating-IP-Actions
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Floating-IP-Actions
 type FloatingIPActionsService interface {
 	Assign(ctx context.Context, ip string, vmID string) (*Action, *Response, error)
 	Unassign(ctx context.Context, ip string) (*Action, *Response, error)
