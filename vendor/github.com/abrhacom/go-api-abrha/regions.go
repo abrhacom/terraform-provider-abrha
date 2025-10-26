@@ -7,7 +7,7 @@ import (
 
 // RegionsService is an interface for interfacing with the regions
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Regions
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Regions
 type RegionsService interface {
 	List(context.Context, *ListOptions) ([]Region, *Response, error)
 }

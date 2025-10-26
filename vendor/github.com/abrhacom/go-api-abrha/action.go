@@ -17,7 +17,7 @@ const (
 )
 
 // ActionsService handles communication with action related methods of the
-// See: https://docs.parspack.com/api/#tag/Actions
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Actions
 type ActionsService interface {
 	List(context.Context, *ListOptions) ([]Action, *Response, error)
 	Get(context.Context, int) (*Action, *Response, error)

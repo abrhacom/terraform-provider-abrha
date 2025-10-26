@@ -12,7 +12,7 @@ const invoicesBasePath = "api/public/v1/customers/my/invoices"
 
 // InvoicesService is an interface for interfacing with the Invoice
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Billing
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Billing
 type InvoicesService interface {
 	Get(context.Context, string, *ListOptions) (*Invoice, *Response, error)
 	GetPDF(context.Context, string) ([]byte, *Response, error)

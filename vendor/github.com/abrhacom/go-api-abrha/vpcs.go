@@ -10,7 +10,7 @@ const vpcsBasePath = "api/public/v1/vpcs"
 
 // VPCsService is an interface for managing Virtual Private Cloud configurations with the
 // Abrha API.
-// See: https://docs.parspack.com/api/#tag/VPCs
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/VPCs
 type VPCsService interface {
 	Create(context.Context, *VPCCreateRequest) (*VPC, *Response, error)
 	Get(context.Context, string) (*VPC, *Response, error)

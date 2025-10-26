@@ -10,7 +10,7 @@ const oneClickBasePath = "api/public/v1/1-clicks"
 
 // OneClickService is an interface for interacting with 1-clicks with the
 // Abrha API.
-// See: https://docs.parspack.com/api/#tag/1-Click-Applications
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/1-Click-Applications
 type OneClickService interface {
 	List(context.Context, string) ([]*OneClick, *Response, error)
 	InstallKubernetes(context.Context, *InstallKubernetesAppsRequest) (*InstallKubernetesAppsResponse, *Response, error)

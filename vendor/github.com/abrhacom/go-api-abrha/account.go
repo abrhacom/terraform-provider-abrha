@@ -7,7 +7,7 @@ import (
 
 // AccountService is an interface for interfacing with the Account
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/Account
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Account
 type AccountService interface {
 	Get(context.Context) (*Account, *Response, error)
 }

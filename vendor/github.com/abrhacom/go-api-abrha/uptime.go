@@ -16,7 +16,7 @@ const (
 )
 
 // UptimeChecksService is an interface for creating and managing Uptime checks with the Abrha API.
-// See: https://docs.parspack.com/api/#tag/Uptime
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/Uptime
 type UptimeChecksService interface {
 	List(context.Context, *ListOptions) ([]UptimeCheck, *Response, error)
 	Get(context.Context, string) (*UptimeCheck, *Response, error)

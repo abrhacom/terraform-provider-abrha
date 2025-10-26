@@ -10,7 +10,7 @@ const keysBasePath = "api/public/v1/account/keys"
 
 // KeysService is an interface for interfacing with the SSH keys
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#tag/SSH-Keys
+// See: https://docs.parspack.com/reference/api/cloud-server/#tag/SSH-Keys
 type KeysService interface {
 	List(context.Context, *ListOptions) ([]Key, *Response, error)
 	GetByID(context.Context, int) (*Key, *Response, error)

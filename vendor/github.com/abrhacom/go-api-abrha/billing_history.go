@@ -10,7 +10,7 @@ const billingHistoryBasePath = "api/public/v1/customers/my/billing_history"
 
 // BillingHistoryService is an interface for interfacing with the BillingHistory
 // endpoints of the Abrha API
-// See: https://docs.parspack.com/api/#operation/billingHistory_list
+// See: https://docs.parspack.com/reference/api/cloud-server/#operation/billingHistory_list
 type BillingHistoryService interface {
 	List(context.Context, *ListOptions) (*BillingHistory, *Response, error)
 }
